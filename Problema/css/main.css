@@ -1,0 +1,18 @@
+.bg-image{
+	background-image: url("../image/large.jpg");
+ 	background-position: center;
+ 	height: 500px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	opacity: .8;
+}
+hr#arw {
+	border: 1px solid;
+	text-align: center;
+}
+hr#arw:after {
+	content: url("../image/separador.png");
+	position: relative;
+	top: -50px;
+	background: none;
+}
