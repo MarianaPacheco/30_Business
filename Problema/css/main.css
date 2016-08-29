@@ -1,16 +1,36 @@
+body {		/* No aparezca la barra de deslazamiento horizontal */
+   overflow-x: hidden;
+}
 .bg-image{
  	background-position: center;
- 	height: 500px;
+ 	height: 650px;
  	background-size:cover;
- 	background-repeat: no-repeat;
- 	opacity: .7;
+ 	background-repeat: no-repeat; 
+}
+.bg-opacity{
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 650px;
+	background-position: center; 
+} 
+#boton,#btn_borde_white,.bg-blue{
+	background-color: #0354A8;
+}
+.mtp{
+	margin-top: 15%;
+}
+.bg-blue{
+	margin-top: 14.6%;
 }
 #im1{
 	background-image: url("../image/large.jpg");
 }
 #im2{
 	background-image: url("../image/sec-2.jpg");
-	background-size: 95% 100%;
+	height: 10%;
+}
+hr{
+	margin-top: 8%;
 }
 hr#arw {
 	border: 1px solid;
@@ -21,4 +41,124 @@ hr#arw:after {
 	position: relative;
 	top: -50px;
 	background: none;
+}
+.text-white{
+	color:#fff;
+}
+a{
+	text-decoration: none!important;
+}
+.mt-15{
+	margin-top: 15%;
+}
+.mt-13{
+	margin-top: 13.7%;
+}
+.mt-2{
+	margin-top: 2%;
+}
+.navbar-default{
+	background-color: transparent;
+	border: none!important;
+	font-weight: bold!important;
+}
+.p-2{
+	padding: 2%;
+}
+.p-5{
+	padding:5%; 
+}
+#btn_borde_white{
+	border:2px solid #fff;
+}
+.ml-5{
+	margin-left: 60%;
+}
+.text-blue{
+	color:#0354A8;
+}
+.mg{
+	margin:5% 5%;
+}
+.icon-size{
+	font-size: 2em;	
+	position: absolute;
+	left: 25%;
+	top: .1%
+}
+.ch{
+	width: 40%;
+}
+.p-3{
+	padding:3%; 
+}
+.mt-5{
+	margin-top: 5%;
+}
+#opacity{
+	opacity: .7;
+}
+.bg-footer{
+	background-color: #020E2D;
+}
+.ml-foot{
+	margin-left: 5%;
+}
+.p-contact{		/* Estilo del texto Contactanos */
+ 	font-size: 30px;
+ 	font-weight: bold;
+ 	margin-bottom: 20px;
+ }
+
+ input, textarea{		/* Estilo de las cajas de texto (nombre email y mensaje) */
+ 	width: 100%;
+ 	margin-bottom:20px;
+ 	padding: 7px;
+ 	box-sizing: border-box;
+ 	font-size: 17px;
+ }
+
+ textarea{		/* Estilo del area de mensaje */
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+ }
+ #boton{			/* Boton formulario */
+ 	padding: 6px;
+ 	color: #fff;
+ 	border-radius: 10px;
+ 	width: 25%;
+ }
+
+ #boton:hover{		/* Boton formulario */
+ 	cursor: pointer;
+ }
+.embed-container{
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+.embed-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.circle{
+	position: relative;
+	left: 98%;
+	box-shadow: 2px 2px 5px #999;
+	padding: 5%;
+}
+.img-circle{
+	width: 50px;
+	height: 50px;
+	top:40%;
+}
+.ic{
+	font-size: 3em;
+	box-shadow: 2px 2px 5px #999;
+	padding: 10%;
 }

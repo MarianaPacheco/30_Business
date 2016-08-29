@@ -5,216 +5,266 @@
 	  	<title>User Testing 360°</title>
 	  	<link rel="shortcut icon " href="favicon.ico">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Yellowtail" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/queries.css">
-		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Yellowtail" rel="stylesheet">
+		<link rel="stylesheet" href="css/icomoon.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
 	</head>
 	<body>
-		<header id="im1" class="bg-image">		<!-- Comienza header -->
-			<div class="container">
-				<div class="row">
-					<nav class="nav" role="navigation">		<!-- Nav -->
-						<div class="col-sm-4 col-lg-4">		<!-- Logo -->
-							<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
-								<span class="sr-only">Desplegar / Ocultar menu</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a href="#" class="navbar-brand"><img class="img-responsive" src="image/user-r.png" alt="logo"></a>		<!-- Imagen logo -->
+		<div class="container-fluid">
+			<a name="home"><header id="im1" class="background-img-responsive bg-image"></a>		<!-- Comienza header -->
+				<div class="bg-opacity container">
+					<div class="row">
+						<nav class="navbar navbar-default nav-bar-static-top mt-2" role="navigation">		<!-- Nav --> 
+							<div class="col-sm-4 col-lg-4">		<!-- Logo -->
+								<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+									<span class="sr-only">Desplegar / Ocultar menu</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="#" class="navbar-brand"><img class="logo img-responsive animated bounceInUp" src="image/user-r.png" alt="logo"></a>		<!-- Imagen logo -->
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-4 col-lg-8">		<!-- Menu -->
-							<div class="collapse navbar-collapse pull-right" id="navegacion">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#ofrece">¿Qué me ofrece?</a></li>
-									<li><a href="#como">¿Cómo funciona?</a></li>
-									<li><a href="#usarlo">¿Por qué usarlo?</a></li>
-									<li><a href="#contacto">Contáctanos</a></li>
-								</ul>
+							<div class="col-sm-4 col-lg-8">		<!-- Menu -->
+								<div class="collapse navbar-collapse navbar-right" id="navegacion">
+									<ul class="nav navbar-nav">
+										<li class="animated bounceInLeft text-white"><a href="#ofrece">¿Qué me ofrece?</a></li>
+										<li class="animated bounceInLeft text-white"><a href="#como">¿Cómo funciona?</a></li>
+										<li class="animated bounceInLeft text-white"><a href="#usarlo">¿Por qué usarlo?</a></li>
+										<li class="animated bounceInLeft text-white"><a href="#contact">Contáctanos</a></li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</nav>		<!-- Termina nav -->
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col lg-12">
-						<h1>Obtén videos de personas reales<br>utilizando tu sitio web en 1 hora</h1>		<!-- Frase -->
+						</nav>		<!-- Termina nav -->
 					</div>
+					<div class="row">
+						<div class="col-sm-12 col lg-12">
+							<h1 class="animated bounceInUp big text-white text-center mt-15">Obtén videos de personas reales<br>utilizando tu sitio web en 1 hora</h1>		<!-- Frase -->
+						</div>
+					</div>
+					<div class="row bg-blue mtp p-2">
+						<div class="col-sm-6 col-lg-6">
+							<center>
+								<h4 class="animated bounceInUp text-white ml-5">PRUEBA GRATUITA</h4>
+								<h5 class="animated bounceInUp text-white ml-5">Obtén un video gratis de 5 minutos</h5>
+							</center>
+						</div>
+						<div class="col-sm-6 col-lg-6">	<!-- Modal -->
+							<button id="btn_borde_white" type="button" class="animated bounceInUp btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Prueba gratis</button>		<!-- Modal -->
+							<div class="modal fade" id="myModal" role="dialog">
+							    <div class="modal-dialog">
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">Formulario | User Testing 360</h4>
+							        </div>
+							        <div class="modal-body">
+							        	<form action><center>
+											<a name="contact">	
+											<input type="text" name="nombre" placeholder="👤Nombre"><br>
+											<input type="text" name="email" placeholder="📧Email"><br>
+											<textarea name="mensaje" placeholder="Mensaje"></textarea><br></center>
+											<input type="submit" name="enviar" value="Enviar e-mail" id="boton"></a>
+										</form>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+						</div>
+					</div>	
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col lg-6">
+			</header>		<!-- Termina header -->
+			<section>	<!-- Inicia section 1 Nuestros servicio -->
+				<div class="container">
+					<div class="row"><a name="ofrece"></a>
+						<div class="col-sm-12 col-lg-12">
+							<center><h3 class="mg text-blue">Nuestros servicios</h3></center>		<!-- Título sección -->
+						</div>
+					</div>
+					<div class="row mt-2">
 						<center>
-							<h4>PRUEBA GRATUITA</h4>
-							<h5>Obtén un video gratis de 5 minutos</h5>
-						</center>
+							<div class="col-sm-12 col-lg-4">
+								<div>	<!-- Círculo blanco del ícono -->
+									<a href="#home"><span class="super ic text-blue icon-video img-circle"></span></a>	<!-- Icon play -->
+								</div>
+								<h4 class="cf text-blue mt-15">Pruébalo gratis</h4>
+								<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
+							</div>
+							<div class="col-sm-12 col-lg-4">
+								<div>	<!-- Círculo blanco del ícono -->
+									<a href="#home"><span class="ic text-blue icon-clock img-circle"></span></a>		<!-- Icon clock -->
+								</div>
+								<h4 class="cf text-blue mt-15">Compra el servicio completo</h4>
+								<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
+							</div>
+							<div class="col-sm-12 col-lg-4">
+								<div>	<!-- Círculo blanco del ícono -->
+									<a href="#home"><span class="animated bounceInLeft ic text-blue icon-documents img-circle"></span></a>	<!-- Icon documents -->
+								</div>
+								<h4 class="cf text-blue mt-15">Obtén el resultado en 1 día</h4>
+								<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
+							</div>
+						</div>
+					</center>
+				</div>
+				<a href="#"><hr class="hr" id="arw"></a>
+			</section>	<!-- Inicia section 1 Nuestros servicio -->
+			<section>		<!-- Inicia section 2 Ejemplo -->
+				<div class="container">
+					<div class="row mg"><a name="como"></a>
+						<div class="col-sm-12 col-lg-6">		<!-- Texto -->
+							<h3 class="text-blue">Ejemplo de <span><img class="ch" src="image/logo-2.jpg" alt="image"></span></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<a class="animated flipInX" href="http://mimediamanzana.com/">mimediamanzana.com</a><br><br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Iste quae necessitatibus nobis, culpa.</p>
+							<center><img src="image/flecha.png" alt="flecha"></center>
+						</div>
+						<div class="col-sm-12 col-lg-6">		<!-- Video -->
+							<div class="embed-container">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-12 col lg-6">
-						<button type="button" id="pm-btn1" class="btn btn-info">Prueba gratis</button></a>
-					</div>
-				</div>	
-			</div>
-		</header>		<!-- Termina header -->
-		<section>	<!-- Inicia section 1 Nuestros servicio -->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-lg-12">
-						<center><h3>Nuestros servicios</h3></center>		<!-- Título sección -->
+					<div class="row">	<!-- Segundo renglón -->
+						<div id="im2" class="animated rotateIn img-responsive col-sm-12 col-lg-6 bg-image visible-lg"> <!-- bg-image -->
+							<div class="row">
+								<div class="col-sm-12 col-lg-12">
+									<!-- 		<div>
+										<span class="sobre icon-size bg-blue img-circle p-3 pull-right icon-pencil"></span>	Icono lápiz
+									</di -->
+									<div class="bg-blue circle p-3 img-circle ">
+										<span class="icon-size img-circle icon-pencil"></span>	<!-- Icono lápiz -->
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-lg-12">
+									<div class="bg-blue circle p-3 img-circle ">
+										<span class="icon-size img-circle icon-tools"></span>	<!-- Icono herramientas -->
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-lg-12">
+									<div class="bg-blue circle p-3 img-circle ">
+										<span class="icon-size img-circle icon-magnifying-glass"></span>	<!-- Icono lupa -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-lg-6 p-5">
+							<p>Lo quiero. ¿Qué hago?</p>	<!-- Título -->
+							<div>	<!-- Paso 1  -->
+								<h4 class="cf text-blue">Paso 1: envíanos tu link</h4>	<!-- Subtítulo -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+							</div>
+							<div>	<!-- Paso 2 -->
+								<h4 class="cf text-blue">Paso 2: envíanos tu link</h4>	<!-- Subtítulo -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+								<ul>
+									<li>A primera vista</li>
+									<li>Busca el botón</li>
+									<li>¿Es fácil?</li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+							</div>
+							<div>	<!-- Paso 3  -->
+								<h4 class="cf text-blue">Paso 3: envíanos tu link</h4>	<!-- Subtítulo -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<center>
-						<div class="col-sm-12 col-lg-4">
-							<div class="borde-icon">	<!-- Círculo blanco del ícono -->
-								<img src="" alt="icon play">		<!-- Icono -->
-							</div>
-							<h4>Pruébalo gratis</h4>
-							<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
-						</div>
-						<div class="col-sm-12 col-lg-4">
-							<div class="borde-icon">	<!-- Círculo blanco del ícono -->
-								<img src="" alt="icon clock">		<!-- Icono -->
-							</div>
-							<h4>Compra el servicio completo</h4>
-							<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
-						</div>
-						<div class="col-sm-12 col-lg-4">
-							<div class="borde-icon">	<!-- Círculo blanco del ícono -->
-								<img src="" alt="icon doc">		<!-- Icono -->
-							</div>
-							<h4>Obtén el resultado en 1 día</h4>
-							<p>Obtén un primer video screencast de un usuario navegando tu página.</p>
-						</div>
-					</div>
-				</center>
-			</div>
-			<a href="#"><hr id="arw"></a>
-		</section>	<!-- Inicia section 1 Nuestros servicio -->
-		<section>		<!-- Inicia section 2 Ejemplo -->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-lg-6">		<!-- Texto -->
-						<h3>Ejemplo de </h3><span><img class="img-responsive" src="image/user.png" alt="image"></span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						<a href="http://mimediamanzana.com/">mimediamanzana.com</a><br><br>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Iste quae necessitatibus nobis, culpa.</p>
-						<img src="image/flecha.png" alt="flecha">
-					</div>
-					<div class="col-sm-12 col-lg-6">		<!-- Video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/u7MDfG9ZJTU" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="row">	<!-- Segundo renglón -->
-					<div id="im2" class="col-sm-12 col-lg-6 bg-image"> <!-- bg-image -->
-						<div class="row">
-							<div class="col-sm-12 col-lg-12">
-								<div>
-									<span class="pull-left icon-pencil"></span>	<!-- Icono lápiz -->
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12 col-lg-12">
-								<div>
-									<span class="pull-left icon-tools"></span>	<!-- Icono herramientas -->
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12 col-lg-12">
-								<div>
-									<span class="pull-left icon-magnifying-glass"></span>	<!-- Icono lupa -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-lg-6">
-						<p>Lo quiero. ¿Qué hago?</p>	<!-- Título -->
-						<div>	<!-- Paso 1  -->
-							<h4 class="text-info">Paso 1: envíanos tu link</h4>	<!-- Subtítulo -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
-						</div>
-						<div>	<!-- Paso 2 -->
-							<h4 class="text-info">Paso 2: envíanos tu link</h4>	<!-- Subtítulo -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+				<a href="#"><hr class="m-0" id="arw"></a>
+			</section>		<!-- Termina section 2 Ejemplo -->
+			<section>		<!-- Inicia section 3 por qué usar -->
+				<div class="container">
+					<div class="row"><a name="usarlo"></a>
+						<div class="col-sm-12 col-lg-6">	<!-- Texto -->
+							<h3 class="text-blue">Por qué usar <span><img class="ch" src="image/logo-2.jpg" alt="image"></span></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque eaque eos, aliquam, inventore suscipit. Non veniam ad unde nulla temporibus? Vitae quisquam maxime dignissimos adipisci repellat, rem commodi ea.</p>
 							<ul>
 								<li>A primera vista</li>
 								<li>Busca el botón</li>
 								<li>¿Es fácil?</li>
 							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+							<p><a href="">"User Testing 360"</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
 						</div>
-						<div>	<!-- Paso 3  -->
-							<h4 class="text-info">Paso 3: envíanos tu link</h4>	<!-- Subtítulo -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+						<div class="col-sm-12 col-lg-6">	<!-- Imagen -->
+							<img class="animated rotateIn mt-5 img-responsive" src="image/banner.jpg" alt="image">
+						</div>	
+					</div>
+					<div id="opacity" class="row bg-blue mt-5 p-2">
+						<div class="col-sm-12 col-lg-6">
+							<center>
+								<h4 class="animated bounceInUp text-white ml-5">PRUEBA GRATUITA</h4>
+								<h5 class="animated bounceInUp text-white ml-5">Obtén un video gratis de 5 minutos</h5>
+							</center>
+						</div>
+						<div class="col-sm-12 col-lg-6">	<!-- Modal -->
+							<button id="btn_borde_white" type="button" class="animated bounceInUp btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Prueba gratis</button>		<!-- Modal -->
+							<div class="modal fade" id="myModal" role="dialog">
+							    <div class="modal-dialog">
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">Prueba gratis | User Testing 360</h4>
+							        </div>
+							        <div class="modal-body">
+							          <p>Some text in the modal.</p>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<a href="#"><hr id="arw"></a>
-		</section>		<!-- Termina section 2 Ejemplo -->
-		<section>		<!-- Inicia section 3 por qué usar -->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-lg-6">	<!-- Texto -->
-						<h3>Por qué usar </h3><span><img class="img-responsive" src="image/user.png" alt="image"></span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloremque eaque eos, aliquam, inventore suscipit. Non veniam ad unde nulla temporibus? Vitae quisquam maxime dignissimos adipisci repellat, rem commodi ea.</p>
-						<ul>
-							<li>A primera vista</li>
-							<li>Busca el botón</li>
-							<li>¿Es fácil?</li>
-						</ul>
-						<p><a href="">"User Testing 360"</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	<!-- Párrafo -->
+			</section>		<!-- Inicia section 3 por qué usar -->
+			<footer>	<!-- Inicia footer -->
+				<div class="container p-2 bg-footer">
+					<a name="contact"><div class="row"></a>	<!-- Texto - iconos -->
+						<div class="col-sm-6 col-lg-9">
+							<h6>Escríbenos a:</h6>	<!-- Texto -->
+						</div>
+						<div class="col-sm-6 col-lg-3">		<!-- Iconos -->
+							<a href="https://www.facebook.com/"><img class="img-circle p-2" src="icon/facebook.png" alt="facebook"></a>
+							<a href="https://twitter.com/"><img class="img-circle p-2" src="icon/twitter.png" alt="twitter">
+						</div>
+					</div></a>
+					<div class="row">	<!-- e-mail y copyright -->
+						<div class="col-sm-6 col-lg-9">
+							<h6><a href="#">experienciadeusuario.lab@gmail.com</a></h6>	<!-- e-mail -->
+						</div>
+						<div class="col-sm-6 col-lg-3">		<!-- copy -->
+							<h6>Copyright © 2015 - User Testing 360</h6>
+						</div>
 					</div>
-					<div class="col-sm-12 col-lg-6">	<!-- Imagen -->
-						<img class="img-responsive" src="image/banner.jpg" alt="image">
-					</div>	
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-lg-6">
-						<center>
-							<h4>PRUEBA GRATUITA</h4>
-							<h5>Obtén un video gratis de 5 minutos</h5>
-						</center>
-					</div>
-					<div class="col-sm-12 col lg-6">
-						<button type="button" class="btn btn-info">Prueba gratis</button></a>
-					</div>
+					<div class="row">
+						<div class="col-sm-6 col-lg-6">		<!-- copy -->
+							<h6>Telef.98963995</h6>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>		<!-- Inicia section 3 por qué usar -->
-		<footer>	<!-- Inicia footer -->
-			<div class="container">
-				<div class="row">	<!-- Texto - iconos -->
-					<div class="col-sm-6 col-lg-6">
-						<h6>Escríbenos a:</h6>	<!-- Texto -->
-					</div>
-					<div class="col-sm-12 col-lg-6">		<!-- Iconos -->
-						<img src="icon/facebook.png" alt="facebook">
-						<img src="icon/twitter.png" alt="twitter">
-					</div>
-				</div>
-				<div class="row">	<!-- e-mail y copyright -->
-					<div class="col-sm-12 col-lg-6">
-						<h6><a href="#">experienciadeusuario.lab@gmail.com</a></h6>	<!-- e-mail -->
-					</div>
-					<div class="col-sm-6 col-lg-6">		<!-- copy -->
-						<h6>Copyright © 2015 - User Testing 360</h6>
-					</div>
-					<div class="col-sm-6 col-lg-6">		<!-- copy -->
-						<h6>Telef.98963995</h6>
-					</div>
-				</div>
-			</div>
-		</footer>	<!-- Termina footer -->
+			</footer>	<!-- Termina footer -->
+		</div>
 		<!--Escribe aqui tu codigo-->
+		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	    <script src="js/jquery.easing.min.js"></script>
-	    <script src="js/jquery.jquery.js"></script>
 	    <script src="js/jquery.main.js"></script>
 	    <script src="js/jquery.menu-scroll.js"></script>
 	    <script src="js/nav-scroll.js"></script>
